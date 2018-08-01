@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Seamless Reminder",
+    "description": "Reminds you if you haven't ordered from Seamless today yet",
+    "version": "0.1",
+    "author": "Tzach Shabtay",
+    "browser_action": {
+      "default_icon": "restaurant.png",
+      "default_title": "Seamless Reminder",
+      "default_popup": "config.html"
+    },
+    "permissions": ["background", "storage", "alarms", "webNavigation"],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    }
+}
